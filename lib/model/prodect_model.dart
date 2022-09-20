@@ -8,4 +8,25 @@ class ProdectModel {
     this.price,
     this.sized,
   });
+  ProdectModel.fromJson(Map<dynamic, dynamic> map) {
+    if (map == null) {
+      return;
+    }
+    name = map['name'];
+    image = map['image'];
+    descrabtion = map['descrabtion'];
+    price = map['price'];
+    sized = map['sized'];
+    color = map['color'];
+  }
+  toJson() {
+    return {
+      'name': name,
+      'image': image,
+      'descrabtion': descrabtion,
+      'price': price,
+      'sized': sized,
+      'color': color,
+    };
+  }
 }

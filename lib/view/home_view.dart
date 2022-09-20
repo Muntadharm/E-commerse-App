@@ -130,7 +130,7 @@ class Homeview extends StatelessWidget {
             children: [
               GestureDetector(
                 onTap: () {
-                  Get.to(DetailsView());
+                  // Get.to(DetailsView(Model: contr,));
                 },
                 child: Container(
                   // height: 60,
